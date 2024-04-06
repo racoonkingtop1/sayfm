@@ -99,9 +99,9 @@
                 </div>
                 <div class="track--controls track--controls2">
                     <div class="controls--slides">
-                        <button><img src="images/icon__slideback.svg" alt="кнопка прокрутки назад" title="назад"></button>
+                        <button class="slidebtns"><img src="images/icon__slideback.svg" alt="кнопка прокрутки назад" title="назад"></button>
                         <button><img src="images/icon__play.svg" alt="кнопка паузы" title="пауза/играть"></button>
-                        <button><img src="images/icon__slideforward.svg" alt="кнопка прокрутки вперёд" title="вперёд"></button>
+                        <button class="slidebtns"><img src="images/icon__slideforward.svg" alt="кнопка прокрутки вперёд" title="вперёд"></button>
                     </div>
                     <div class="controls__sound">
                         <button><img src="images/icon__soundbar.svg" alt="иконка громкости" title="уровень громкости"></button>
@@ -113,7 +113,7 @@
                 </div>
             </div>
             <div class="playing__btns">
-                <button class="playing__playlist-btn">
+                <button class="slidebtns playing__playlist-btn">
                     ПЛЕЙЛИСТ
                     <img class="icon__sizeup" src="images/icon__sizeup.svg" alt="иконка раскрытия" title="раскрыть">
                     <img class="dnone icon__cross" src="images/icon__cross.svg" alt="иконка скрытия" title="cкрыть">
@@ -207,9 +207,10 @@
         <section class=" playing__action-btns">
             <button class="action__like">
                 <span class="likes-counter">211</span>
-                <div class="like-icon--container">
-                    <svg class="playing__like-icon" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.027 21.687l.94-5.44a2.221 2.221 0 00-2.187-2.6h-6.908a1.112 1.112 0 01-1.096-1.292l.884-5.394a6.378 6.378 0 00-.12-2.63 2.18 2.18 0 00-1.456-1.516l-.193-.063a1.795 1.795 0 00-1.325.09 1.686 1.686 0 00-.907 1.091l-.635 2.446c-.202.778-.495 1.53-.874 2.238-.554 1.036-1.41 1.867-2.3 2.634l-1.92 1.653a2.226 2.226 0 00-.762 1.875l1.083 12.524a2.221 2.221 0 002.212 2.03h6.197c4.643 0 8.604-3.234 9.367-7.646z" fill="#1C3898"/><path fill-rule="evenodd" clip-rule="evenodd" d="M3.957 12.647a1 1 0 011.04.913l1.294 14.981a1.65 1.65 0 11-3.29.143V13.645a1 1 0 01.956-.998z" fill="#1C3898"/></svg>
-                </div>
+                    <svg class="playing__like-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.0269 21.6867L27.9669 16.2467C28.0221 15.9278 28.0069 15.6008 27.9225 15.2884C27.8381 14.976 27.6864 14.6859 27.4781 14.4382C27.2699 14.1906 27.01 13.9915 26.7167 13.8547C26.4235 13.718 26.1038 13.647 25.7803 13.6467H18.8723C18.7111 13.6467 18.5518 13.6116 18.4055 13.5439C18.2592 13.4762 18.1294 13.3774 18.0251 13.2545C17.9208 13.1316 17.8445 12.9874 17.8015 12.832C17.7586 12.6766 17.7499 12.5137 17.7763 12.3547L18.6603 6.96134C18.8037 6.08566 18.7629 5.18967 18.5403 4.33068C18.445 3.97575 18.2616 3.65065 18.007 3.38561C17.7525 3.12056 17.4351 2.92417 17.0843 2.81468L16.8909 2.75201C16.4538 2.6116 15.9795 2.64404 15.5656 2.84268C15.1123 3.06134 14.7816 3.46001 14.6589 3.93334L14.0243 6.37868C13.8222 7.15685 13.5286 7.90832 13.1496 8.61734C12.5963 9.65334 11.7403 10.484 10.8496 11.2507L8.93094 12.904C8.66476 13.134 8.45687 13.4238 8.32431 13.7497C8.19174 14.0755 8.13827 14.4282 8.16827 14.7787L9.25094 27.3027C9.29865 27.8566 9.55233 28.3724 9.96186 28.7484C10.3714 29.1243 10.907 29.3331 11.4629 29.3333H17.6603C22.3029 29.3333 26.2643 26.0987 27.0269 21.6867Z" fill="#1C3898"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.95744 12.6467C4.21512 12.6354 4.46718 12.7242 4.66099 12.8944C4.85479 13.0646 4.97533 13.3031 4.99744 13.56L6.29077 28.5414C6.31268 28.7645 6.28888 28.9897 6.22083 29.2033C6.15277 29.4169 6.04189 29.6143 5.89496 29.7836C5.74803 29.9529 5.56813 30.0905 5.36624 30.1879C5.16436 30.2854 4.94473 30.3406 4.72077 30.3504C4.49682 30.3601 4.27323 30.324 4.06367 30.2444C3.85411 30.1648 3.66298 30.0433 3.50194 29.8874C3.34091 29.7314 3.21336 29.5443 3.12707 29.3374C3.04079 29.1305 2.99759 28.9082 3.0001 28.684V13.6454C3.00021 13.3876 3.09985 13.1399 3.27822 12.9538C3.45659 12.7677 3.69992 12.6577 3.95744 12.6467Z" fill="#1C3898"/>
+                        </svg>
                 МНЕ НРАВИТСЯ
             </button>
             <button class="action__share--vk">
@@ -383,11 +384,11 @@
             <div class="menu-part__inner-block">
                 <h3>Выберите <span>радиостанцию</span></h3>
                 <div class="menu-part__inner---container">
-                    <div class="part__inner--item"></div>
-                    <div class="part__inner--item"></div>
-                    <div class="part__inner--item"></div>
-                    <div class="part__inner--item"></div>
-                    <div class="part__inner--item"></div>
+                    <div class="part__inner--item radioLink"></div>
+                    <div class="part__inner--item radioLink"></div>
+                    <div class="part__inner--item radioLink"></div>
+                    <div class="part__inner--item radioLink"></div>
+                    <div class="part__inner--item radioLink"></div>
                 </div>
             </div>
         </div>
@@ -702,15 +703,15 @@
         
             <div class="miniplayer__main">
         
-                <button><img src="images/icon__slideback.svg" alt="иконка прокрутки к предыдущему треку" title="назад"></button>
+                <button class="slidebtns"><img src="images/icon__slideback.svg" alt="иконка прокрутки к предыдущему треку" title="назад"></button>
         
-                <button><img src="images/icon__play.svg" alt="иконка плей" title="плей"></button>
+                <button class="slidebtns"><img src="images/icon__play.svg" alt="иконка плей" title="плей"></button>
         
                 <button class="dnone"><img src="images/icon__pause.svg" alt="иконка паузы" title="пауза"></button>
         
-                <button><img src="images/icon__slideforward.svg" alt="иконка прокрутки к следующему треку" title="вперед"></button>
+                <button class="slidebtns"><img src="images/icon__slideforward.svg" alt="иконка прокрутки к следующему треку" title="вперед"></button>
         
-                <button><img src="images/icon__list.svg" alt="иконка списка треков" title="список треков"></button>
+                <button class="slidebtns"><img src="images/icon__list.svg" alt="иконка списка треков" title="список треков"></button>
         
                 <img src="images/image_template.avif" alt="обложка трека" title="обложка">
         
